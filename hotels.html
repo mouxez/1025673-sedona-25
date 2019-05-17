@@ -7,66 +7,98 @@
   <body>
     <header>
         <!-- логотип сайта -->
-      <div class="site-logo">
-        <img src="img/logo.svg" alt="logo"> 
-      </div>
+      <a href="index.html">
+        <img class="site-logo" src="img/logo.svg" alt="logo"> 
+      </a>
       <!-- главная навигация -->
-      <nav>
-        <ul class="site-navigation">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
+      <nav class="site-navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#">Информация</a></li>
+          <li class="nav-item"><a href="#">Фото и видео</a></li>
+          <li class="nav-item"><a href="#">Карта штата</a></li>
+          <li class="nav-item"><a href="#">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
     <main class="conteiner">
+      <h1 class="visually-hidden">Поиск отелей в Sedona</h1>
     <!-- тут будут фильтры поиска -->
+      <h2 class="visually-hidden">Список отелей</h2>
         <ul class="hotels-list">
             <li>
-                <h3>Amara Resort & Spa</h3>
-                <span>Гостиница</span>
-                <span>от 4000 Р.</span>
-                <a href="hotel-name.html"><img src="img/hotel-name.svg" alt="hotel-photo"></a>
-                <a class="button" href="hotel-name.html">Подробнее</a>
-                <a class="button" href="order-page.html">Забронировать</a>
-                <span>Рейтинг: 8,5</span>
-                <img src="img/four-star.svg" alt="four-star-icon">
+              <div class="card">
+                <div class="hotel-image">
+                    <a href="hotel-name.html"><img src="img/hotel-name.svg" alt="hotel-photo"></a>
+                </div>
+                <div class="card-content">
+                  <h3>Amara Resort & Spa</h3>
+                  <div class="institution-price">
+                    <span>Гостиница</span>
+                    <span>от 4000 Р.</span>
+                  </div>
+                  <a class="button" href="hotel-name.html">Подробнее</a>
+                  <a class="button" href="order-page.html">Забронировать</a>
+                </div>
+                <div class="rating-star">
+                  <span>Рейтинг: 8,5</span>
+                  <img src="img/icon-star.svg" alt="icon-star">
+                </div>
+              </div>
             </li>
             <li>
-                <h3>Desert Quail Inn</h3>
-                <span>Мотель</span>
-                <span>от 3000 Р.</span>
-                <a href="hotel-name.html"><img src="img/hotel-name.svg" alt="hotel-photo"></a>
-                <a class="button" href="hotel-name.html">Подробнее</a>
-                <a class="button" href="order-page.html">Забронировать</a>
-                <span>Рейтинг: 8,9</span>
-                <img src="img/three-star.svg" alt="three-star-icon">
+              <div class="card">
+                  <div class="hotel-image">
+                      <a href="hotel-name.html"><img src="img/hotel-name.svg" alt="hotel-photo"></a>
+                  </div>
+                  <div class="card-content">
+                    <h3>Desert Quail Inn</h3>
+                    <div class="institution-price">
+                      <span>Мотель</span>
+                      <span>от 3000 Р.</span>
+                    </div>
+                    <a class="button" href="hotel-name.html">Подробнее</a>
+                    <a class="button" href="order-page.html">Забронировать</a>
+                  </div>
+                  <div class="rating-star">
+                    <span>Рейтинг: 8,9</span>
+                    <img src="img/icon-star.svg" alt="icon-star">
+                  </div>
+              </div>
             </li>
             <li>
-                <h3>Villas at Poco Diablo</h3>
-                <span>Апартаменты</span>
-                <span>от 2000 Р.</span>
-                <a href="hotel-name.html"><img src="img/hotel-name.svg" alt="hotel-photo"></a>
-                <a class="button" href="hotel-name.html">Подробнее</a>
-                <a class="button" href="order-page.html">Забронировать</a>
-                <span>Рейтинг: 9,2</span>
-                <img src="img/two-star.svg" alt="two-star-icon">
+              <div class="card">
+                  <div class="hotel-image">
+                      <a href="hotel-name.html"><img src="img/hotel-name.svg" alt="hotel-photo"></a>
+                  </div>
+                  <div class="card-content">
+                    <h3>Villas at Poco Diablo</h3>
+                    <div class="institution-price">
+                      <span>Апартаменты</span>
+                      <span>от 2000 Р.</span>
+                    </div>
+                    <a class="button" href="hotel-name.html">Подробнее</a>
+                    <a class="button" href="order-page.html">Забронировать</a>
+                  </div>
+                  <div class="rating-star">
+                    <span>Рейтинг: 9,2</span>
+                    <img src="img/icon-star.svg" alt="icon-star">
+                  </div>
+              </div>
             </li>
         </ul>
     </main>
     <footer>
-        <span class="hashtag">#visitSEDONA</span>
+        <span class="hashtag"><a href="#visitSEDONA">#visitSEDONA</a></span>
             <!-- социальные сети -->
-            <ul class="social-sedona">
-                <li><a class="social-button twitter-sedona" href="#"></a></li>
-                <li><a class="social-button facebook-sedona" href="#"></a></li>
-                <li><a class="social-button youtube-sedona" href="#"></a></li>
+            <ul class="social">
+                <li><a class="icon icon-twitter" href="#"></a></li>
+                <li><a class="icon icon-facebook" href="#"></a></li>
+                <li><a class="icon icon-youtube" href="#"></a></li>
             </ul>
-            <p class="copyright">
+            <div class="copyright">
               <span>Website by</span>
-              <a href="https://htmlacademy.ru/"><img src="img/htmlacademy-logo.svg" alt="htmlacademy-logo"></a>
-            </p>
+              <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy-logo.svg" alt="htmlacademy-logo"></a>
+            </div>
         </footer>
      </body>
 </html>
