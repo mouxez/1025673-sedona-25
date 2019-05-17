@@ -7,16 +7,16 @@
   <body>
     <header>
         <!-- логотип сайта -->
-      <div class="site-logo">
-        <img src="img/logo.svg" alt="logo"> 
-      </div>
+      <a href="#">
+        <img class="site-logo" src="img/logo.svg" alt="logo"> 
+      </a>
       <!-- главная навигация -->
-      <nav>
-        <ul class="site-navigation">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
+      <nav class="site-navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#">Информация</a></li>
+          <li class="nav-item"><a href="#">Фото и видео</a></li>
+          <li class="nav-item"><a href="#">Карта штата</a></li>
+          <li class="nav-item"><a href="#">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -28,8 +28,9 @@
         </div>
 
         <section class="about-sedona">
-          <p>Седона — небольшой городок в Аризоне, заслуживающий большего! </p>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          <h1 class="visually-hidden">Информация о городе Седона</h1>
+          <h2 class="sedona-city">Седона — небольшой городок в Аризоне, заслуживающий большего! </h2>
+          <p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </section>
       </div>
 
@@ -37,28 +38,35 @@
       <!-- тут будет зона с рекомендациями жилья, еды и других мест интереса -->
       </section>
 
-      <section class="sedona-map">
-      <!-- тут будет карта -->
+      <section class="hotel-offer">
+          <h2 class="got-interested">Заинтересовались?</h2>
+          <p class="travel-date">Укажите предполагаемые даты поездки,  и мы покажем вам лучшие предложения гостиниц в седоне  </p>
+        
+        <div class="hotel-search">
+        <!-- тут будет поиск отелей -->
+        </div>
+
       </section>
 
-      <div class="hotel-search">
-          <!-- тут будет поиск отелей -->
+      <div class="sedona-map">
+      <!-- тут будет карта -->
       </div>
+
     </main>
 
     <footer>
-      <span class="hashtag">#visitSEDONA</span>
+      <span class="hashtag"><a href="#visitSEDONA">#visitSEDONA</a></span>
 
       <!-- социальные сети -->
-      <ul class="social-sedona">
-          <li><a class="social-button twitter-sedona" href="#"></a></li>
-          <li><a class="social-button facebook-sedona" href="#"></a></li>
-          <li><a class="social-button youtube-sedona" href="#"></a></li>
+      <ul class="social">
+          <li><a class="icon icon-twitter" href="#"></a></li>
+          <li><a class="icon icon-facebook" href="#"></a></li>
+          <li><a class="icon icon-youtube" href="#"></a></li>
       </ul>
-      <p class="copyright">
+      <div class="copyright">
         <span>Website by</span>
-        <a href="https://htmlacademy.ru/"><img src="img/htmlacademy-logo.svg" alt="htmlacademy-logo"></a>
-      </p>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy-logo.svg" alt="htmlacademy-logo"></a>
+      </div>
     </footer>
   </body>
 </html>
