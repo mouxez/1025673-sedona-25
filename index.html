@@ -1,76 +1,105 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-    <header>
-      <div class="header-container">
-          <!-- логотип сайта -->
-        <a href="#">
-          <img class="site-logo" src="img/logo1.svg" alt="logo">
-        </a>
-        <!-- главная навигация -->
-        <nav class="site-navigation">
-          <ul class="nav-list">
-            <li class="nav-item"><a href="#">Информация</a></li>
-            <li class="nav-item"><a href="#">Фото и видео</a></li>
-            <li class="nav-item"><a href="#">Карта штата</a></li>
-            <li class="nav-item"><a href="hotels.html">Гостиницы</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main class="container">
-      <!-- верхняя часть страницы с приветствием -->
-      <div class="site-header"> <!-- картинку подключу как бэкграунд -->
-        <div class="greetings">
-      <!-- внутри катринка Sedona как бэкграунд -->
-        </div>
 
-        <section class="about-sedona">
-          <h1 class="visually-hidden">Информация о городе Седона</h1>
-          <h2 class="sedona-city">Седона — небольшой городок в Аризоне, заслуживающий большего! </h2>
-          <p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        </section>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <!-- логотип сайта -->
+      <a href="#">
+        <img class="site-logo" src="img/logo1.svg" alt="logo">
+      </a>
+      <!-- главная навигация -->
+      <nav class="site-navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#">Информация</a></li>
+          <li class="nav-item"><a href="#">Фото и видео</a></li>
+          <li class="nav-item"><a href="#">Карта штата</a></li>
+          <li class="nav-item"><a href="hotels.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <!-- верхняя часть страницы с приветствием -->
+    <div class="site-header">
+      <!-- картинку подключу как бэкграунд -->
+      <div class="greetings">
+        <!-- внутри катринка Sedona как бэкграунд -->
       </div>
 
-      <section class="highlights">
+      <section class="about-sedona">
+        <h1 class="visually-hidden">Информация о городе Седона</h1>
+        <h2 class="sedona-city">Седона — небольшой городок в Аризоне, заслуживающий большего! </h2>
+        <p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </section>
+    </div>
+
+    <section class="highlights">
       <!-- тут будет зона с рекомендациями жилья, еды и других мест интереса -->
+    </section>
+
+    <div class="hotel-map">
+      <section class="hotel-offer">
+        <h2 class="got-interested">Заинтересовались?</h2>
+        <p class="travel-date">Укажите предполагаемые даты поездки,  и мы покажем вам лучшие предложения гостиниц в
+          седоне  </p>
+        <!-- Форма поиска отелей -->
+        <div class="hotel-search">
+          <p class="search-header">
+            <h2>Поиск гостиницы в Седоне</h2>
+          </p>
+          <form class="hotels-search-form" action="https://echo.sedona.com" method="POST">
+            <p class="date-input">
+              <label for="arrival-date">Дата заезда:</label>
+              <input type="text" name="arrival-date" id="arrival-date" value="" placeholder="24 апреля 2017">
+            </p>
+            <p class="date-input">
+              <label for="departure-date">Дата выезда:</label>
+              <input type="text" name="departure-date" id="departure-date" value="" placeholder="4 июля 2017">
+            </p>
+            <p class="adult-input">
+              <label for="adult-input">Взрослые:</label>
+              <button type="button">-</button>
+              <input class="adult-input-form" type="text" name="adult-input" id="adult-input" value="" placeholder="2">
+              <button type="button">+</button>
+            </p>
+            <p class="child-input">
+              <label for="child-input">Дети:</label>
+              <button type="button">-</button>
+              <input class="child-input-form" type="text" name="child-input" id="child-input" value="" placeholder="0">
+              <button type="button">+</button>
+            </p>
+            <button type="submit">Найти</button>
+          </form>
+        </div>
       </section>
 
-      <div class="hotel-map">
-        <section class="hotel-offer">
-            <h2 class="got-interested">Заинтересовались?</h2>
-            <p class="travel-date">Укажите предполагаемые даты поездки,  и мы покажем вам лучшие предложения гостиниц в седоне  </p>
-
-          <div class="hotel-search">
-          <!-- тут будет поиск отелей -->
-          </div>
-
-        </section>
-
-        <div class="sedona-map">
+      <div class="sedona-map">
         <!-- тут будет карта -->
-        </div>
       </div>
+    </div>
 
-    </main>
+  </main>
 
-    <footer>
-      <span class="hashtag"><a href="#visitSEDONA">#visitSEDONA</a></span>
+  <footer>
+    <span class="hashtag"><a href="#visitSEDONA">#visitSEDONA</a></span>
 
-      <!-- социальные сети -->
-      <ul class="social">
-          <li><a class="icon icon-twitter" href="#"></a></li>
-          <li><a class="icon icon-facebook" href="#"></a></li>
-          <li><a class="icon icon-youtube" href="#"></a></li>
-      </ul>
-      <div class="copyright">
-        <span>Website by</span>
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy-logo.svg" alt="htmlacademy-logo"></a>
-      </div>
-    </footer>
-  </body>
+    <!-- социальные сети -->
+    <ul class="social">
+      <li><a class="icon icon-twitter" href="#"></a></li>
+      <li><a class="icon icon-facebook" href="#"></a></li>
+      <li><a class="icon icon-youtube" href="#"></a></li>
+    </ul>
+    <div class="copyright">
+      <span>Website by</span>
+      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy-logo.svg" alt="htmlacademy-logo"></a>
+    </div>
+  </footer>
+</body>
+
 </html>
