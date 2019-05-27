@@ -1,0 +1,102 @@
+body {
+
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  color: #000000;
+  letter-spacing: normal;
+  text-transform: uppercase;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-item a {
+    width: 90px;
+    height: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.site-header {
+  background-image: url("../img/background-photo.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 773px;
+  position:relative;
+  padding-bottom:50px;
+  text-align: center;
+
+}
+
+.greetings {
+  background-image: url("../img/welcome.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 459px;
+  height: 353px;
+  object-fit: contain;
+
+}
+
+.polygon {
+  background-image: url("../img/polygon.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 1201px;
+  height: 59px;
+  position: absolute;
+}
+
+.about-sedona {
+  width: 1200px;
+  height: 216px;
+  background-color: white;
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+
+}
+
+.sedona-city {
+    width: 440px;
+    height: 48px;
+    font-size: 21px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.24;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+}
+
+.reasons {
+    width: 489px;
+    height: 13px;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+}
+
+
+
