@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div class="site-header">
   <header>
     <div class="header-container">
       <!-- логотип сайта -->
@@ -28,9 +29,6 @@
     </div>
   </header>
   <main class="container">
-    <!-- верхняя часть страницы с приветствием -->
-    <div class="site-header">
-      <!-- картинку подключу как бэкграунд -->
       <div class="greetings">
         <!-- внутри катринка Sedona как бэкграунд -->
       </div>
@@ -39,7 +37,7 @@
 
       <section class="about-sedona">
         <h1 class="visually-hidden">Информация о городе Седона</h1>
-        <h2 class="sedona-city">Седона — небольшой городок в Аризоне, заслуживающий большего! </h2>
+        <h2 class="sedona-city">Седона — небольшой городок в Аризоне, <br>заслуживающий большего! </h2>
         <p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
     </div>
@@ -50,9 +48,11 @@
 
     <div class="hotel-map">
       <section class="hotel-offer">
-        <h2 class="interested">Заинтересовались?</h2>
-        <p class="travel-info">Укажите предполагаемые даты поездки,  и мы покажем вам лучшие предложения гостиниц в
-          седоне  </p>
+        <div class="interested-wrap">
+          <h2 class="interested">Заинтересовались?</h2>
+          <p class="travel-info">Укажите предполагаемые даты поездки,  и мы покажем вам лучшие предложения гостиниц в
+            седоне  </p>
+        </div>
         <!-- Форма поиска отелей -->
         <div class="hotel-search">
           <h2 class="search-header">Поиск гостиницы в Седоне</h2>
@@ -91,7 +91,7 @@
 
   </main>
 
-  <footer>
+  <footer class="page-footer">
     <span class="hashtag"><a href="#visitSEDONA">#visitSEDONA</a></span>
 
     <!-- социальные сети -->
@@ -101,8 +101,8 @@
       <li><a class="icon icon-youtube" href="#"></a></li>
     </ul>
     <div class="copyright">
-      <span>Website by</span>
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy-logo.svg" alt="htmlacademy-logo"></a>
+      <span class="academy-copyright">Website by</span>
+      <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="academy-footer-logo" src="../img/logo-htmlacademy.svg" alt="htmlacademy-logo"></a>
     </div>
   </footer>
 </body>
