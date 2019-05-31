@@ -34,9 +34,9 @@ a {
 .nav-item a:active {
   color: rgba(0, 0, 0, 0.3);
  }
- .nav-item a:focus {
+ /* .nav-item a:focus {
   color: #766357;
- }
+ } */
 
 .nav-list {
   list-style: none;
@@ -147,7 +147,7 @@ a {
   margin-left: 40px;
 }
 
-.hashtag {
+.hashtag a {
     width: 136px;
     height: 16px;
     font-size: 21px;
@@ -170,28 +170,42 @@ a {
     background-color: #81b3d2;
     display: inline-block;
 }
+.icon:hover {
+  background-color: #669ec0;
+}
+.icon:active {
+  background-color: #5496bd;
+}
 
 .icon-twitter {
-  background-image: url("../img/twitter-icon.svg");
+  background-image: url("../img/twitter-icon-white.svg");
   background-repeat: no-repeat;
   background-size: 17px 15px;
   background-position-y: center;
   background-position-x: center;
 }
-
+.icon-twitter:active {
+  background-image: url("../img/tw.png");
+}
 .icon-facebook {
-  background-image: url("../img/fb-icon.svg");
+  background-image: url("../img/fb-icon-white.svg");
   background-repeat: no-repeat;
   background-size: 12px 22px;
   background-position-y: center;
   background-position-x: center;
 }
+.icon-facebook:active {
+  background-image: url("../img/fb.png");
+}
 .icon-youtube {
-  background-image: url("../img/youtube-icon.svg");
+  background-image: url("../img/youtube-icon-white.svg");
   background-repeat: no-repeat;
   background-size: 20px 16px;
   background-position-y: center;
   background-position-x: center;
+}
+.icon-youtube:active {
+  background-image: url("../img/youtube.png");
 }
 .academy-copyright {
     width: 74px;
@@ -203,7 +217,21 @@ a {
     line-height: 1.86;
     letter-spacing: normal;
     text-align: center;
-    color: #000000;
+}
+.academy-footer-logo {
+  background-image: url("../img/logo-htmlacademy.svg");
+  background-repeat: no-repeat;
+  width: 115px;
+  height: 41px;
+  object-fit: contain;
+}
+.academy-footer-logo:hover {
+  background-image: url("../img/academy-hover.png");
+  background-repeat: no-repeat;
+}
+.academy-footer-logo:active {
+  background-image: url("../img/academy-active.png");
+  background-repeat: no-repeat;
 }
 .site-logo {
   margin-left: 550px;
@@ -220,6 +248,13 @@ a {
     width: 568px;
     height: 86px;
     background-color: #766357;
+}
+.search-header:hover {
+  background-color: #604e43;
+}
+.search-header:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
 }
 .sedona-map {
   background-image: url("../img/map.png");
@@ -260,6 +295,14 @@ a {
   text-align: center;
   color: white;
 }
+.search-btn:hover {
+  background-color: #669ec0;
+}
+.search-btn:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .field-date-input,
 .adult-input-form,
 .child-input-form {
@@ -271,6 +314,43 @@ a {
   letter-spacing: normal;
   color: #000000;
   text-transform: uppercase;
+  background-color: #f2f2f2;
+}
+.field-date-input {
+  background-image: url("../img/calendar-grey.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+.field-date-input:hover {
+  background-color: #ebebeb;
+  background-image: url("../img/calendar_black.svg");
+  background-repeat: no-repeat;
+}
+.field-date-input:focus {
+  background-color: #ffffff;
+  border: solid 2px #e5e5e5;
+  background-image: url("../img/calendar_blue.svg");
+  background-repeat: no-repeat;
+}
+.quantity-btn-plus {
+  color: #cacaca;
+  font-size: 14px;
+}
+.quantity-btn-plus:hover {
+  color: #000000;
+}
+.quantity-btn-plus:active {
+  color: #81b3d2;
+}
+.quantity-btn-minus {
+  color: #cacaca;
+  font-size: 14px;
+}
+.quantity-btn-minus:hover {
+  color: #000000;
+}
+.quantity-btn-minus:active {
+  color: #81b3d2;
 }
 .hotels-list {
   list-style: none;
@@ -282,6 +362,13 @@ a {
   font-stretch: normal;
   line-height: 1.24;
   letter-spacing: normal;
+  color: #000000;
+}
+.hotel-name:hover {
+  color: #81b3d2;
+}
+.hotel-name:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 .institution-price {
   font-size: 14px;
@@ -306,6 +393,13 @@ a {
   letter-spacing: normal;
   color: #ffffff;
 }
+.more-info:hover {
+  background-color: #669ec0;
+}
+.more-info:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
 .book {
   display: block;
   width: 142px;
@@ -319,6 +413,13 @@ a {
   letter-spacing: normal;
   color: #ffffff;
   text-align: center;
+}
+.book:hover {
+  background-color: #604e43;
+}
+.book:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
 }
 .rating-score {
   display: block;
