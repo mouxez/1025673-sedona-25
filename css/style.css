@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+.page-wrapper {
+  margin: 0 auto;
+}
+
 body {
 
   margin: 0px;
@@ -15,7 +25,6 @@ a {
 
 .nav-item a {
     width: 90px;
-    height: 10px;
     font-size: 14px;
     font-weight: bold;
     font-style: normal;
@@ -40,7 +49,7 @@ a {
 }
 
 .header-wrap {
-  background-image: url("../img/intro_sedona.jpg");
+  background-image: url("../img/group-sedona-bgr.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   width: 1200px;
@@ -49,6 +58,15 @@ a {
   margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
+}
+.polygon {
+  background-image: url("../img/polygon.svg");
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 59px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 404px;
 }
 
 .about-sedona {
@@ -121,12 +139,13 @@ a {
 
 .page-footer {
   background-color: rgba(255, 255, 255, 0.9);
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .page-footer-container {
-width: 1200px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hashtag a {
@@ -301,22 +320,22 @@ width: 1200px;
   text-transform: uppercase;
   background-color: #f2f2f2;
 }
-.field-date-input {
-  background-image: url("../img/calendar-grey.svg");
-  background-repeat: no-repeat;
-  background-position-x: right;
-}
-.field-date-input:hover {
+.field-date-input:hover + .span-icon {
   background-color: #ebebeb;
   background-image: url("../img/calendar_black.svg");
   background-repeat: no-repeat;
 }
-.field-date-input:focus,
-.field-date-input:active {
+.field-date-input:active + .span-icon,
+.field-date-input:focus + .span-icon {
   background-color: #ffffff;
-  border: solid 2px #e5e5e5;
   background-image: url("../img/calendar_blue.svg");
   background-repeat: no-repeat;
+}
+.span-icon {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/calendar-grey.svg");
 }
 .quantity-btn-plus {
   color: #cacaca;
