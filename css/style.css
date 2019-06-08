@@ -33,7 +33,34 @@ a {
     line-height: 1.86;
     letter-spacing: normal;
     color: #000000;
+    background-color: #ffffff;
 }
+.nav-item-1 a {
+  padding-left: 72px;
+  padding-right: 74px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+.nav-item-2 a {
+  padding-left: 73px;
+  padding-right: 190px; /*68+122 */
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+.nav-item-3 a {
+  padding-left: 198px; /*76+122*/
+  padding-right: 73px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+.nav-item-4 a {
+  padding-left: 88px;
+  padding-right: 76px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+
 .nav-item-active a {
   color: #766357;
 }
@@ -47,16 +74,19 @@ a {
 
 .nav-list {
   list-style: none;
+  display: flex;
+  padding-top: 18px;
+  padding-left: 0px;
+  padding-right: 0px;
+  justify-content: space-between;
 }
-
-.header-wrap {
+.site-header {
   background-image: url("../img/group-sedona-bgr.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   width: 1200px;
   height: 773px;
   position: relative;
-  margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -67,17 +97,16 @@ a {
   height: 59px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 404px;
+  margin-top: 457px;
+  margin-bottom: -3px;
 }
 
-.about-sedona {
-  position: absolute;
-  bottom: 0px;
-  text-align: center;
-  background-color: #ffffff;
-}
 .about-sedona-container {
   width: 1200px;
+  position: absolute;
+  min-height: 216px;
+  text-align: center;
+  background-color: #ffffff;
 }
 
 .sedona-city {
@@ -88,7 +117,7 @@ a {
     line-height: 1.24;
     letter-spacing: normal;
     color: #000000;
-    margin-top: 57px;
+    margin-top: 55px;
 }
 
 .reasons {
@@ -147,6 +176,10 @@ a {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  min-height: 120px;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .hashtag a {
@@ -163,6 +196,9 @@ a {
 
 .social {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 184px;
 }
 
 .icon {
@@ -360,6 +396,10 @@ a {
 }
 .hotels-list {
   list-style: none;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
 }
 .hotel-name {
   font-size: 21px;
@@ -369,6 +409,7 @@ a {
   line-height: 1.24;
   letter-spacing: normal;
   color: #000000;
+  margin-bottom: 5px;
 }
 .hotel-name:hover {
   color: #81b3d2;
@@ -384,11 +425,15 @@ a {
   line-height: 1.5;
   letter-spacing: normal;
   color: #333333;
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 15px;
+
 }
 .more-info {
   display: block;
   width: 110px;
-  height: 27px;
+  max-height: 27px;
   background-color: #81b3d2;
   text-align: center;
   font-size: 14px;
@@ -409,6 +454,7 @@ a {
 .book {
   display: block;
   width: 142px;
+  max-height: 27px;
   background-color: #766357;
   font-size: 14px;
   font-weight: bold;
@@ -438,6 +484,43 @@ a {
   letter-spacing: normal;
   text-align: center;
   color: #666666;
+  margin-top: 25px;
+}
+.card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.rating {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: 600px;
+  min-height: 90px;
+}
+.rating-star {
+  padding-bottom: 23px;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 31px;
+  margin-bottom: 25px;
+}
+.btn-wrap {
+  display: flex;
+  width: 260px;
+  justify-content: space-between;
+}
+
+.span-price-1 {
+  margin-left: 45px;
+}
+.span-price-2 {
+  margin-left: 70px;
+}
+.span-price-3 {
+  margin-left: 25px;
 }
 
 
