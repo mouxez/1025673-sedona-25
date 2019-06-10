@@ -7,6 +7,7 @@ html {
 .page-wrapper {
   margin: 0 auto;
   width: 1200px;
+  box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 body {
@@ -25,7 +26,7 @@ a {
 }
 
 .nav-item a {
-    width: 90px;
+    /* width: 90px; */
     font-size: 14px;
     font-weight: bold;
     font-style: normal;
@@ -33,31 +34,23 @@ a {
     line-height: 1.86;
     letter-spacing: normal;
     color: #000000;
-    background-color: #ffffff;
+    display: inline-block;
 }
 .nav-item-1 a {
-  padding-left: 72px;
-  padding-right: 74px;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  margin-left: 72px;
+  margin-right: 74px;
 }
 .nav-item-2 a {
-  padding-left: 73px;
-  padding-right: 190px; /*68+122 */
-  padding-top: 22px;
-  padding-bottom: 22px;
+  margin-left: 73px;
+  margin-right: 190px; /*68+122 */
 }
 .nav-item-3 a {
-  padding-left: 198px; /*76+122*/
-  padding-right: 73px;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  margin-left: 198px; /*76+122*/
+  margin-right: 73px;
 }
 .nav-item-4 a {
-  padding-left: 88px;
-  padding-right: 76px;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  margin-left: 88px;
+  margin-right: 76px;
 }
 
 
@@ -78,7 +71,9 @@ a {
   padding-top: 18px;
   padding-left: 0px;
   padding-right: 0px;
-  justify-content: space-between;
+  background-color: #ffffff;
+  min-height: 56px;
+  margin-top: 0px;
 }
 .site-header {
   background-image: url("../img/group-sedona-bgr.jpg");
@@ -90,23 +85,23 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-.polygon {
+.site-header::after {
+  content: "";
   background-image: url("../img/polygon.svg");
   background-repeat: no-repeat;
   width: 1200px;
   height: 59px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 457px;
-  margin-bottom: -3px;
+  display: block;
+  margin-top: -287px;
 }
 
 .about-sedona-container {
   width: 1200px;
-  position: absolute;
+  /* position: absolute; */
   min-height: 216px;
   text-align: center;
   background-color: #ffffff;
+  margin-top: 501px;
 }
 
 .sedona-city {
@@ -117,7 +112,7 @@ a {
     line-height: 1.24;
     letter-spacing: normal;
     color: #000000;
-    margin-top: 55px;
+    padding-top: 40px;
 }
 
 .reasons {
@@ -129,7 +124,7 @@ a {
     line-height: 1.86;
     letter-spacing: normal;
     color: #333333;
-    margin-bottom: 56px;
+    padding-top: 20px;
     margin-left: 355px;
 }
 
@@ -149,8 +144,6 @@ a {
 .interested-wrap {
   text-align: center;
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: #ffffff;
 }
 
@@ -165,6 +158,7 @@ a {
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .page-footer {
@@ -174,11 +168,8 @@ a {
 
 .page-footer-container {
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   min-height: 120px;
-  justify-content: space-around;
   align-items: center;
 }
 
@@ -192,6 +183,7 @@ a {
     letter-spacing: normal;
     text-align: center;
     color: #000000;
+    padding-left: 132px;
 }
 
 .social {
@@ -199,6 +191,7 @@ a {
   display: flex;
   justify-content: space-between;
   width: 184px;
+  margin-left: 256px;
 }
 
 .icon {
@@ -254,6 +247,11 @@ a {
     line-height: 1.86;
     letter-spacing: normal;
     text-align: center;
+    margin-top: 10px;
+}
+.copyright {
+  display: flex;
+  margin-left: 228px;
 }
 .academy-footer-logo {
   background-image: url("../img/logo-htmlacademy.svg");
@@ -261,6 +259,8 @@ a {
   width: 115px;
   height: 41px;
   object-fit: contain;
+  margin-left: 8px;
+  margin-top: 5px;
 }
 .academy-footer-logo:hover {
   background-image: url("../img/academy-hover.png");
@@ -397,8 +397,6 @@ a {
 .hotels-list {
   list-style: none;
   background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
   margin-top: 100px;
 }
 .hotel-name {
@@ -411,7 +409,8 @@ a {
   color: #000000;
   margin-bottom: 5px;
 }
-.hotel-name:hover {
+.hotel-name:hover,
+.hotel-name:focus {
   color: #81b3d2;
 }
 .hotel-name:active {
@@ -428,8 +427,16 @@ a {
   display: flex;
   justify-content: flex-start;
   padding-bottom: 15px;
-
+  width: 200px;
 }
+.institution-price span:nth-child(2) {
+  padding-left: 20px;
+}
+.institution-price span:first-child {
+  width: 100px;
+}
+
+
 .more-info {
   display: block;
   width: 110px;
@@ -495,8 +502,9 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-left: 600px;
   min-height: 90px;
+  margin-left: auto;
+  padding-right: 73px;
 }
 .rating-star {
   padding-bottom: 23px;
@@ -512,15 +520,3 @@ a {
   width: 260px;
   justify-content: space-between;
 }
-
-.span-price-1 {
-  margin-left: 45px;
-}
-.span-price-2 {
-  margin-left: 70px;
-}
-.span-price-3 {
-  margin-left: 25px;
-}
-
-
