@@ -145,6 +145,7 @@ a {
   text-align: center;
   width: 1200px;
   background-color: #ffffff;
+  min-height: 291px;
 }
 
 .interested {
@@ -296,7 +297,7 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 .sedona-map {
-  background-image: url("../img/map.png");
+  background-image: url("../img/map.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   width: 1200px;
@@ -307,12 +308,17 @@ a {
   margin-right: auto;
 }
 .hotel-search {
+  position: absolute;
+  margin-left: 316px;
+  margin-top: -100px;
+  z-index: 1;
+}
+.hotels-search-form {
   width: 568px;
   height: 395px;
-  background-color: rgba(255, 255, 255, 0.9);
-  margin-left: auto;
-  margin-right: auto;
+  background-color: #ffffff;
 }
+
 .form-container {
   font-size: 14px;
   font-weight: bold;
@@ -322,6 +328,9 @@ a {
   letter-spacing: normal;
   text-align: left;
   color: #000000;
+  padding: 55px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .search-btn {
   width: 458px;
@@ -335,6 +344,7 @@ a {
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
+  margin-top: 60px;
 }
 .search-btn:hover {
   background-color: #669ec0;
@@ -342,6 +352,24 @@ a {
 .search-btn:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
+}
+.field-text-date {
+  margin-right: 20px;
+}
+.field-text-2 {
+  margin-right: 16px;
+}
+
+.field-date-input {
+  height: 38;
+  width: 346px;
+  margin-bottom: 29px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 13px;
+}
+.field-text-people {
+  margin-right: 41px;
 }
 
 .field-date-input,
@@ -356,15 +384,35 @@ a {
   color: #000000;
   text-transform: uppercase;
   background-color: #f2f2f2;
+  border: none;
+}
+.adult-input-form,
+.child-input-form {
+  width: 38px;
+  height: 38px;
+  position: relative;
+  bottom: 3px;
+}
+.field-date-input:hover,
+.adult-input-form:hover,
+.child-input-form:hover {
+  background-color: #ebebeb;
 }
 .field-date-input:hover + .span-icon {
-  background-color: #ebebeb;
   background-image: url("../img/calendar_black.svg");
   background-repeat: no-repeat;
 }
+.field-date-input:active,
+.field-date-input:focus,
+.adult-input-form:active,
+.child-input-form:active,
+.adult-input-form:focus,
+.child-input-form:focus {
+  background-color: #ffffff;
+}
+
 .field-date-input:active + .span-icon,
 .field-date-input:focus + .span-icon {
-  background-color: #ffffff;
   background-image: url("../img/calendar_blue.svg");
   background-repeat: no-repeat;
 }
@@ -373,10 +421,40 @@ a {
   width: 22px;
   height: 22px;
   background-image: url("../img/calendar-grey.svg");
+  left: 485px;
+  margin-top: -59px;
 }
+.quantity-btn-plus,
+.quantity-btn-minus {
+  border: none;
+  background-color: #f2f2f2;
+  width: 38px;
+  height: 38px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+.adult-minus {
+  margin-left: -5px;
+}
+.adult-input-form {
+  margin-left: -3px;
+}
+.adult-plus {
+  margin-left: -4px;
+  margin-right: 33px;
+}
+
+.child-input-form {
+  margin-left: -4px;
+}
+.child-plus {
+  margin-left: -4px;
+}
+
+
 .quantity-btn-plus {
   color: #cacaca;
-  font-size: 14px;
 }
 .quantity-btn-plus:hover {
   color: #000000;
@@ -386,7 +464,6 @@ a {
 }
 .quantity-btn-minus {
   color: #cacaca;
-  font-size: 14px;
 }
 .quantity-btn-minus:hover {
   color: #000000;
