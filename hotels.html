@@ -30,7 +30,68 @@
     </header>
     <main class="conteiner">
       <h1 class="visually-hidden">Поиск отелей в Sedona</h1>
-      <!-- тут будут фильтры поиска -->
+
+      <div class="filter-range">
+        <div class="infrastructure">
+          <h3 class="filter-heading">Инфраструктура:</h3>
+          <ul class="infrastructure-list filter-list">
+            <li>
+              <label>
+              <input type="checkbox" name="pool" value="pool" checked>Бассейн
+            </label>
+            </li>
+            <li>
+              <label>
+              <input type="checkbox" name="parking" value="parking">Парковка
+            </label>
+            </li>
+            <li>
+              <label>
+              <input type="checkbox" name="Wi-Fi" value="Wi-Fi">Wi-Fi
+            </label>
+            </li>
+          </ul>
+        </div>
+        <div class="housing-type">
+          <h3 class="filter-heading">Тип жилья:</h3>
+          <ul class="housing-type-list filter-list">
+            <li>
+              <label>
+              <input type="checkbox" name="hotel" value="hotel" checked>Гостиница
+              </label>
+            </li>
+            <li>
+              <label>
+              <input type="checkbox" name="motel" value="motel" checked>Мотель
+            </label>
+            </li>
+            <li>
+              <label>
+              <input type="checkbox" name="apartment" value="apartment" checked>Апартаменты
+            </label>
+            </li>
+          </ul>
+        </div>
+        <div class="range-price">
+          <h3 class="filter-heading">Стоимость в сутки (Р):</h3>
+        </div>
+      </div>
+
+      <div class="sorting">
+        <div class="sotring-area-wrap">
+          <span class="found-objects">Найдено: 3</span>
+          <span class="sorting-by">Сортировка:</span>
+          <button class="price-btn sorting-btn" type="button">По цене</button>
+          <button class="type-btn sorting-btn" type="button">По типу</button>
+          <button class="rating-btn sorting-btn" type="button">По рейтингу</button>
+          <span class="sorting-arrows">
+            <button class="sorting-arrow-up sorting-btn"><img src="img/arrow-up-icon.svg" alt="arrow-up"></button>
+            <button class="sorting-arrow-down sorting-btn"><img src="img/arrow-down-icon.svg" alt="arrow-down"></button>
+          </span>
+          </div>
+        </div>
+
+    <div class="hotel-list-wrap">
       <h2 class="visually-hidden">Список отелей</h2>
       <ul class="hotels-list">
         <li>
@@ -118,6 +179,7 @@
           </div>
         </li>
       </ul>
+    </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer-container">
