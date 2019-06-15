@@ -821,21 +821,7 @@ input[type='number']::-webkit-inner-spin-button {
   margin-top: -16px;
   display: flex;
 }
-.filter-heading {
-  font-size: 16px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.31;
-  color: #ffffff;
-  margin-bottom: 9px;
-}
-.infrastructure {
-  margin-left: 72px;
-}
-.housing-type {
-  margin-left: 112px;
-}
+
 .range-price {
   margin-left: 394px;
   width: 300px;
@@ -931,17 +917,20 @@ input[type='number']::-webkit-inner-spin-button {
   background: none;
   border: none;
 }
-.filter-list li {
-  list-style: none;
-  font-size: 14px;
-  font-weight: normal;
+.filter-heading {
+  font-size: 16px;
+  font-weight: bold;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
+  line-height: 1.31;
   color: #ffffff;
-  padding-bottom: 20px;
-  margin-left: -40px;
+  margin-bottom: 9px;
+}
+.infrastructure {
+  margin-left: 72px;
+}
+.housing-type {
+  margin-left: 112px;
 }
 input[type="checkbox"] {
   position: absolute;
@@ -950,22 +939,33 @@ input[type="checkbox"] {
   overflow: hidden;
   clip: rect(0 0 0 0);
 }
-.check_box {
-  position: absolute;
-  margin-left: -2em;
-  width: 23px;
-  height: 23px;
-  background-image: url("../img/checkbox-off.svg");
-}
-.check {
-  padding-left: 2em;
+.option {
   display: block;
+  margin-bottom: 1em;
+  color: white;
 }
-.check_box + .check_input:checked {
-  background-image: url("../img/checkbox-on.svg");
+.check-box {
+  position: absolute;
+  background-image: url("/img/checkbox-off.svg");
+  width: 27px;
+  height: 23px;
+  background-repeat: no-repeat;
+  background-position: left;
 }
-.check_box + .check_input:disabled {
-  background-image: url("../img/checkbox-off-dis.svg");
+.check-input:checked + .check-box {
+  background-image: url("/img/checkbox-on.svg")
 }
+.check-input:focus + .check-box {
+}
+.check-input:checked:focus + .check-box {
+  background-image: url("/img/checkbox-on.svg")
+}
+.check-input:checked:disabled + .check-box {
+  background-image: url("/img/checkbox-on-dis.svg")
+}
+.check-input:disabled + .check-box {
+  background-image: url("/img/checkbox-off-dis.svg")
+}
+
 
 
