@@ -823,7 +823,7 @@ input[type='number']::-webkit-inner-spin-button {
 }
 
 .range-price {
-  margin-left: 394px;
+  margin-left: 374px;
   width: 300px;
   color: #ffffff;
   text-transform: uppercase;
@@ -932,17 +932,20 @@ input[type='number']::-webkit-inner-spin-button {
 .housing-type {
   margin-left: 112px;
 }
-input[type="checkbox"] {
+.check-input {
   position: absolute;
   width: 1px;
   height: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
 }
-.option {
+.check {
   display: block;
-  margin-bottom: 1em;
-  color: white;
+  color: #ffffff;
+  padding-left: 2em;
+  display: flex;
+  margin-top: 25px;
+  align-items: center;
 }
 .check-box {
   position: absolute;
@@ -951,11 +954,13 @@ input[type="checkbox"] {
   height: 23px;
   background-repeat: no-repeat;
   background-position: left;
+  margin-left: -30px;
 }
 .check-input:checked + .check-box {
   background-image: url("/img/checkbox-on.svg")
 }
 .check-input:focus + .check-box {
+  box-shadow: 0px 0px 3px 2px #0433ff;
 }
 .check-input:checked:focus + .check-box {
   background-image: url("/img/checkbox-on.svg")
