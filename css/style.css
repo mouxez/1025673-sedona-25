@@ -37,18 +37,22 @@ a {
 .nav-item-1 a {
   margin-left: 72px;
   margin-right: 74px;
+  margin-top: -10px;
 }
 .nav-item-2 a {
   margin-left: 73px;
-  margin-right: 190px; /*68+122 */
+  margin-right: 190px;
+  margin-top: -10px;
 }
 .nav-item-3 a {
-  margin-left: 198px; /*76+122*/
+  margin-left: 200px;
   margin-right: 73px;
+  margin-top: -10px;
 }
 .nav-item-4 a {
-  margin-left: 88px;
-  margin-right: 76px;
+  margin-left: 92px;
+  margin-right: 70px;
+  margin-top: -10px;
 }
 .nav-item-active a {
   color: #766357;
@@ -106,10 +110,10 @@ a {
   line-height: 1.24;
   letter-spacing: normal;
   color: #000000;
-  padding-top: 40px;
+  padding-top: 63px;
 }
 .reasons {
-  width: 489px;
+  width: 499px;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -117,8 +121,8 @@ a {
   line-height: 1.86;
   letter-spacing: normal;
   color: #333333;
-  padding-top: 20px;
-  margin-left: 355px;
+  padding-top: 10px;
+  margin-left: 350px;
 }
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
@@ -271,7 +275,7 @@ a {
 }
 .site-logo {
   position: absolute;
-  margin-left: 540px;
+  margin-left: 530px;
 }
 .sedona-map {
   background-image: url("../img/map.jpg");
@@ -479,6 +483,9 @@ input[type="number"]::-webkit-inner-spin-button {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
+.bottom-button {
+  margin-top: 25px;
+}
 .button:hover,
 .button:focus {
   background-color: #669ec0;
@@ -508,6 +515,7 @@ input[type="number"]::-webkit-inner-spin-button {
   -webkit-box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   background-color: #ffffff;
+  min-height: 395px;
 }
 .hotel-search-form-active {
   position: absolute;
@@ -698,10 +706,34 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 400px;
   background-color: #81b3d2;
   min-height: 256px;
-  padding-top: 45px;
+  padding-top: 25px;
   padding-left: 25px;
   padding-right: 25px;
   color: #ffffff;
+  padding-bottom: 0px;
+}
+.feature-1 h3,
+.feature-2 h3,
+.feature-3 h3,
+.feature-4 h3,
+.feature-5 h3 {
+  font-size: 21px;
+}
+.feature-1 span,
+.feature-1 p,
+.feature-2 span,
+.feature-2 p,
+.feature-3 span,
+.feature-3 p,
+.feature-4 span,
+.feature-4 p,
+.feature-5 span,
+.feature-5 p {
+  font-size: 14px;
+}
+.feature-1 p {
+  margin-top: 22px;
+  line-height: 1.5em;
 }
 .photo-feature-1 {
   background-image: url("../img/feature-picture-1.jpg");
@@ -717,9 +749,16 @@ input[type="number"]::-webkit-inner-spin-button {
   background-repeat: no-repeat;
   background-position-x: 162px;
   background-position-y: 60px;
-  padding-top: 165px;
+  padding-top: 133px;
   padding-left: 25px;
   padding-right: 25px;
+  line-height: 1.5;
+}
+.feature-housing h3 {
+  font-size: 21px;
+}
+.feature-housing p {
+  font-size: 14px;
 }
 .feature-food {
   background-color: #ffffff;
@@ -728,11 +767,18 @@ input[type="number"]::-webkit-inner-spin-button {
   background-image: url("../img/food-icon.svg");
   background-repeat: no-repeat;
   background-size: 74px 70px;
-  background-position-x: 170px;
+  background-position-x: 165px;
   background-position-y: 62px;
-  padding-top: 165px;
+  padding-top: 133px;
   padding-left: 25px;
   padding-right: 25px;
+  line-height: 1.5;
+}
+.feature-food h3 {
+  font-size: 21px;
+}
+.feature-food p {
+  font-size: 14px;
 }
 .feature-souvenirs {
   background-color: #ffffff;
@@ -743,9 +789,16 @@ input[type="number"]::-webkit-inner-spin-button {
   background-size: 64px 76px;
   background-position-x: 168px;
   background-position-y: 56px;
-  padding-top: 165px;
+  padding-top: 133px;
   padding-left: 25px;
   padding-right: 25px;
+  line-height: 1.5;
+}
+.feature-souvenirs h3 {
+  font-size: 21px;
+}
+.feature-souvenirs p {
+  font-size: 14px;
 }
 .photo-feature-2 {
   background-image: url("../img/feature-picture-2.jpg");
@@ -757,23 +810,33 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 400px;
   min-height: 256px;
   color: #ffffff;
-  padding-top: 45px;
+  padding-top: 22px;
   padding-left: 25px;
   padding-right: 25px;
+}
+.feature-2 p {
+  line-height: 1.5;
+  margin-top: 22px;
 }
 .feature-3 {
   background-color: #eeeeee;
   width: 400px;
   min-height: 256px;
-  padding-top: 50px;
+  padding-top: 24px;
   padding-left: 45px;
   padding-right: 45px;
+}
+.feature-3 p,
+.feature-4 p,
+.feature-5 p {
+  margin-top: 24px;
+  line-height: 1.5;
 }
 .feature-4 {
   background-color: #eeeeee;
   width: 400px;
   min-height: 256px;
-  padding-top: 50px;
+  padding-top: 24px;
   padding-left: 45px;
   padding-right: 45px;
 }
@@ -781,7 +844,7 @@ input[type="number"]::-webkit-inner-spin-button {
   background-color: #eeeeee;
   width: 400px;
   min-height: 256px;
-  padding-top: 50px;
+  padding-top: 24px;
   padding-left: 55px;
   padding-right: 55px;
 }
