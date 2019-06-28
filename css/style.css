@@ -36,22 +36,18 @@ a {
 }
 .nav-item-1 a {
   margin-left: 72px;
-  margin-right: 74px;
   margin-top: -10px;
 }
 .nav-item-2 a {
-  margin-left: 73px;
-  margin-right: 183px;
+  margin-left: 146px;
   margin-top: -10px;
 }
 .nav-item-3 a {
-  margin-left: 200px;
-  margin-right: 73px;
+  margin-left: 390px;
   margin-top: -10px;
 }
 .nav-item-4 a {
-  margin-left: 92px;
-  margin-right: 70px;
+  margin-left: 165px;
   margin-top: -10px;
 }
 .nav-item-active a {
@@ -928,30 +924,56 @@ input[type="number"]::-webkit-inner-spin-button {
   padding-left: 0px;
   padding-right: 0px;
 }
-.sorting-arrow-up:hover,
+.sorting-arrow-up {
+  background-image: url("../img/arrow-up-icon.svg");
+  width: 11px;
+  height: 10px;
+  background-position: center;
+}
+.sorting-arrow-down {
+  background-image: url("../img/arrow-down-icon.svg");
+  width: 11px;
+  height: 10px;
+  background-position: center;
+  margin-left: 9px;
+}
+.sorting-arrow-up:hover {
+  background-image: url("../img/arrow-up-hover.svg");
+}
 .sorting-arrow-down:hover {
-  fill: #000000;
+  background-image: url("../img/arrow-down-hover.svg");
 }
 .sorting-arrows {
-  margin-left: 483px;
+  margin-left: 498px;
 }
 .price-btn {
   color: #81b3d2;
-  margin-left: 28px;
+  margin-left: 35px;
   background-color: #ffffff;
 }
 .type-btn {
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #81b3d2;
-  margin-left: 15px;
+  margin-left: 30px;
   background-color: #ffffff;
+  line-height: 8px;
 }
 .rating-btn {
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #81b3d2;
-  margin-left: 15px;
+  margin-left: 28px;
   background-color: #ffffff;
+  line-height: 8px;
 }
+.sorting-btn:hover {
+  color: #81b3d2;
+}
+.sorting-btn:focus,
+.sorting-btn:active {
+  color: #000000;
+  border-bottom: none;
+}
+
 .filter-range {
   background-image: url("../img/filter-background.jpg");
   background-size: 1200px 800px;
@@ -964,7 +986,7 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
 }
 .range-price {
-  margin-left: 342px;
+  margin-left: 338px;
   width: 300px;
   color: #ffffff;
   text-transform: uppercase;
@@ -1089,12 +1111,13 @@ input[type="number"]::-webkit-inner-spin-button {
   font-weight: 400;
   line-height: 21px;
   color: #ffffff;
-  margin-top: 15px;
+  margin-top: 13px;
   font-size: 14px;
 }
 .check-box {
   display: inline-block;
   padding: 0.5em 0.5em 0.5em 2.5em;
+  margin-left: 5px;
 }
 .check-input:disabled ~ .field-checkbox__name-text {
   cursor: not-allowed;
