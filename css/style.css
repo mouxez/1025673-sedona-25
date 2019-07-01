@@ -197,7 +197,7 @@ a {
   align-items: center;
   margin-top: 0px;
   margin-top: -15px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .page-footer-container {
@@ -213,7 +213,7 @@ a {
   -ms-flex-align: center;
   align-items: center;
   margin-top: -120px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .hashtag a {
@@ -702,10 +702,12 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .field-text-input::-moz-placeholder {
   color:#000000;
+  opacity: 1;
 }
 
 .field-text-input:-moz-placeholder {
   color:#000000;
+  opacity: 1;
 }
 
 .field-text-input:-ms-input-placeholder {
