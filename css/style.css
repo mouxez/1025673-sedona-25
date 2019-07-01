@@ -109,7 +109,7 @@ a {
   width: 1200px;
   height: 59px;
   display: block;
-  top: 500px;
+  top: 505px;
 }
 
 .about-sedona-container {
@@ -117,7 +117,7 @@ a {
   min-height: 216px;
   text-align: center;
   background-color: #ffffff;
-  margin-top: 501px;
+  margin-top: 505px;
 }
 
 .sedona-city {
@@ -128,7 +128,7 @@ a {
   line-height: 1.24;
   letter-spacing: normal;
   color: #000000;
-  padding-top: 63px;
+  padding-top: 64px;
 }
 
 .reasons {
@@ -213,7 +213,7 @@ a {
   -ms-flex-align: center;
   align-items: center;
   margin-top: -120px;
-  padding-top: 14px;
+  padding-top: 0px;
 }
 
 .hashtag a {
@@ -239,7 +239,7 @@ a {
   justify-content: space-between;
   width: 187px;
   margin-left: 220px;
-  margin-bottom: 9px;
+  margin-bottom: 19px;
 }
 
 .icon {
@@ -304,7 +304,7 @@ a {
   line-height: 1.86;
   letter-spacing: normal;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .copyright {
@@ -322,7 +322,7 @@ a {
   -o-object-fit: contain;
   object-fit: contain;
   margin-left: 8px;
-  margin-top: 5px;
+  margin-top: 0px;
 }
 
 .academy-footer-logo:hover {
@@ -522,7 +522,7 @@ a {
   min-height: 90px;
   margin-left: auto;
   padding-right: 73px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .rating-star {
@@ -640,6 +640,25 @@ input[type="number"]::-webkit-inner-spin-button {
   position: absolute;
   z-index: 50000;
   display: block;
+  animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .field-text {
@@ -861,6 +880,7 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-top: 5px;
 }
 
 .feature-1 {
@@ -923,10 +943,12 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .feature-housing h3 {
   font-size: 21px;
+  margin-top: 25px;
 }
 
 .feature-housing p {
   font-size: 14px;
+  margin-top: -5px;
 }
 
 .feature-food {
@@ -946,10 +968,12 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .feature-food h3 {
   font-size: 21px;
+  margin-top: 25px;
 }
 
 .feature-food p {
   font-size: 14px;
+  margin-top: -5px;
 }
 
 .feature-souvenirs {
@@ -969,10 +993,12 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .feature-souvenirs h3 {
   font-size: 21px;
+  margin-top: 25px;
 }
 
 .feature-souvenirs p {
   font-size: 14px;
+  margin-top: -5px;
 }
 
 .photo-feature-2 {
