@@ -1386,3 +1386,11 @@ input[type="number"]::-webkit-inner-spin-button {
 .field-number-input {
   -moz-appearance: textfield;
 }
+
+.my-name {
+margin-left: 10px;
+position: absolute;
+left: 1000px;
+top: 57px;
+font-size: 18px;
+}
